@@ -1,0 +1,18 @@
+//LINKS OF SEARCH:
+
+/* ***************** Module_GUI_1JavaFX ************** */
+//JavaFX Tutorial #1 - First FX Application With Eclipse
+https://www.youtube.com/watch?v=EEcpMTpaWhs
+
+//JavaFX Tutorial #2 - Styling with CSS and FX-Effects
+https://www.youtube.com/watch?v=tyeqqz7o2pI
+
+//JavaFX Tutorial #3 - A Basic TableView
+https://www.youtube.com/watch?v=PLO1B77UjWY
+
+//JavaFX Tutorial #4 - Customizing a ComboBox
+https://www.youtube.com/watch?v=H5_syXvP2mo
+
+//JavaFX Tutorial #5 - Media Elements
+https://www.youtube.com/watch?v=hMFVYZFOwxQ
+/* *************************************************** */
