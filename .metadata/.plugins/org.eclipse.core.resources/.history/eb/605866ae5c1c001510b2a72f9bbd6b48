@@ -1,0 +1,5 @@
+package americo.controller;
+
+public class FXMLExampleController {
+
+}

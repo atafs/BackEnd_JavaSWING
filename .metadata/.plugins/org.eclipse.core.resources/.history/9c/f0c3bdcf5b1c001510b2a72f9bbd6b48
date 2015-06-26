@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="91.0" layoutY="53.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="91.0" layoutY="109.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="91.0" layoutY="161.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="91.0" layoutY="215.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>

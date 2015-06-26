@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <panes>
+    <TitledPane animated="false" prefHeight="725.0" prefWidth="1133.0" text="CREATE TASKS" textFill="#1084cd">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Accordion layoutX="113.0" layoutY="44.0" />
+                  <Button contentDisplay="CENTER" layoutX="459.0" layoutY="168.0" mnemonicParsing="false" text="upload tasks" textFill="#1f78b9">
+                     <font>
+                        <Font name="AngsanaUPC Italic" size="31.0" />
+                     </font>
+                  </Button>
+                  <Sphere layoutX="133.0" layoutY="64.0" radius="0.77" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="113.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="63.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77bdff" height="55.0" layoutX="165.0" layoutY="141.0" stroke="BLACK" strokeType="INSIDE" width="63.0" />
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font name="Angsana New Bold" size="43.0" />
+         </font>
+    </TitledPane>
+    <TitledPane animated="false" text="CREATE SUB-TASKS" textFill="#146f0d" textOverrun="WORD_ELLIPSIS">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button contentDisplay="CENTER" layoutX="440.0" layoutY="139.0" mnemonicParsing="false" text="upload sub tasks" textFill="#1abc3d">
+                     <font>
+                        <Font name="AngsanaUPC Italic" size="31.0" />
+                     </font>
+                  </Button>
+                  <Arc fill="#199433" layoutX="125.0" layoutY="108.0" length="270.0" radiusX="34.0" radiusY="23.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fill="#71e482" layoutX="162.0" layoutY="139.0" length="270.0" radiusX="34.0" radiusY="23.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <PointLight color="CHARTREUSE" layoutX="91.0" layoutY="201.0" lightOn="true" />
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font name="AngsanaUPC Bold" size="43.0" />
+         </font>
+    </TitledPane>
+    <TitledPane animated="false" contentDisplay="CENTER" text="CREATE ATTACHMENTS" textFill="#910a0a">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="425.0" layoutY="135.0" mnemonicParsing="false" text="upload attachment" textFill="#c92e2e">
+                     <font>
+                        <Font name="AngsanaUPC Italic" size="31.0" />
+                     </font>
+                  </Button>
+                  <MeshView layoutX="213.0" layoutY="119.0" />
+                  <MeshView layoutX="231.0" layoutY="132.0" />
+                  <Ellipse fill="#ff1f31" layoutX="147.0" layoutY="102.0" radiusX="35.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Ellipse fill="#901111" layoutX="182.0" layoutY="138.0" radiusX="35.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font name="AngsanaUPC Bold" size="43.0" />
+         </font>
+    </TitledPane>
+      <TitledPane animated="false" prefHeight="725.0" prefWidth="1133.0" text="DO IT ALL" textFill="#860484">
+         <font>
+            <Font name="Angsana New Bold" size="43.0" />
+         </font>
+         <content>
+            <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="upload all" textFill="#971260">
+               <font>
+                  <Font name="AngsanaUPC Italic" size="31.0" />
+               </font>
+            </Button>
+         </content>
+      </TitledPane>
+  </panes>
+</Accordion>
