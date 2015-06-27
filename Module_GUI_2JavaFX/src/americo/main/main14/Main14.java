@@ -24,7 +24,8 @@ public class Main14 extends Application {
         launch(args);
     }
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public void start(Stage primaryStage) throws Exception {
         window = primaryStage;
         window.setTitle("thenewboston - JavaFX");
