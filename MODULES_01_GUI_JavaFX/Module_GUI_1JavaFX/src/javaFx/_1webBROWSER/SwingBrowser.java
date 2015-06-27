@@ -27,6 +27,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
+@SuppressWarnings("serial")
 public class SwingBrowser extends JFrame {
 	 
     private final JFXPanel jfxPanel = new JFXPanel();
