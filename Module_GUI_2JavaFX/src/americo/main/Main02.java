@@ -20,7 +20,7 @@ public class Main02 extends Application implements EventHandler<ActionEvent> {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Title of Window");
         button = new Button();
-        button.setText("Hey baby");
+        button.setText("Americo Tomas");
 
         //This class will handle the button events
         button.setOnAction(this);
@@ -37,7 +37,7 @@ public class Main02 extends Application implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
         if (event.getSource() == button) 
-            System.out.println("Hey Charlie!");
+            System.out.println("Mas tambem tenho como nome Tomas Americo ;-)");
     }
 
 }

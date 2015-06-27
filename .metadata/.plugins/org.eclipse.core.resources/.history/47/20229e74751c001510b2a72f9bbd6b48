@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.74" prefHeight="768.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Button mnemonicParsing="false" opacity="0.6" text="CREATE TASK" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Button mnemonicParsing="false" opacity="0.6" text="CREATE SUBTASK" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Button mnemonicParsing="false" opacity="0.6" text="LOAD ATTACHMENTS" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TextArea BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Button mnemonicParsing="false" opacity="0.6" text="UPLOAD ALL" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
