@@ -1,6 +1,5 @@
 package americo.main.main16;
 
-import americo.main.main17.Person;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
