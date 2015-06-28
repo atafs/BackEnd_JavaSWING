@@ -78,7 +78,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_VD_wBRw8EeW5ea-ywo4ACQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_VCnP8Bw8EeW5ea-ywo4ACQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_VD_wBhw8EeW5ea-ywo4ACQ" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_VDxtkBw8EeW5ea-ywo4ACQ"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_VD_wBxw8EeW5ea-ywo4ACQ" containerData="8292" selectedElement="_VD_wCBw8EeW5ea-ywo4ACQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_VD_wBxw8EeW5ea-ywo4ACQ" containerData="8292" selectedElement="_VD_wDRw8EeW5ea-ywo4ACQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_VD_wCBw8EeW5ea-ywo4ACQ" containerData="7911" selectedElement="_VD_wCRw8EeW5ea-ywo4ACQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_VD_wCRw8EeW5ea-ywo4ACQ" elementId="org.eclipse.ui.editorss" containerData="7951" ref="_VCbCsBw8EeW5ea-ywo4ACQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_VD_wChw8EeW5ea-ywo4ACQ" elementId="topRight" visible="false" containerData="2049" selectedElement="_VD_wCxw8EeW5ea-ywo4ACQ">
@@ -330,7 +330,7 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_bz5-oB3eEeW0qa637mzkhw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Gui.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Gui.java&quot; partName=&quot;Gui.java&quot; title=&quot;Gui.java&quot; tooltip=&quot;Module_GUI_1_2JavaFX_integrationModule/src/gui/Gui.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Module_GUI_1_2JavaFX_integrationModule/src/gui/Gui.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1509&quot; selectionTopPixel=&quot;120&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Gui.java&quot; partName=&quot;Gui.java&quot; title=&quot;Gui.java&quot; tooltip=&quot;Module_GUI_1_2JavaFX_integrationModule/src/gui/Gui.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Module_GUI_1_2JavaFX_integrationModule/src/gui/Gui.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1056&quot; selectionTopPixel=&quot;120&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -589,7 +589,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_U9CzcBw8EeW5ea-ywo4ACQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qvszFx3fEeWCd9-r6RESVg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Ull9HBw8EeW5ea-ywo4ACQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8aSJBx3gEeWaBelMo56onA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Ull9HBw8EeW5ea-ywo4ACQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_U9CzcRw8EeW5ea-ywo4ACQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -628,7 +628,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_U9DagBw8EeW5ea-ywo4ACQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qv2kGR3fEeWCd9-r6RESVg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ull8xRw8EeW5ea-ywo4ACQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8aSJER3gEeWaBelMo56onA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ull8xRw8EeW5ea-ywo4ACQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_U9DagRw8EeW5ea-ywo4ACQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
