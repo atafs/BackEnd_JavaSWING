@@ -33,7 +33,8 @@ public class Gui extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
     	//SET ICON
-    	primaryStage.getIcons().add(new Image(pathMEDIA + "/morphisICON.jpg"));
+    	String pathMedia = pathMEDIA + "/morphisICON.jpg";
+    	primaryStage.getIcons().add(new Image(/morphisICON.jpg"));
  
         window = primaryStage;
         primaryStage.setResizable(false);
@@ -64,7 +65,7 @@ public class Gui extends Application {
         createAll.getStyleClass().add("button-purple");
         
         //IMAGE
-        Image image = new Image(pathMEDIA + "/morphis.jpg");
+        Image image = new Image("media/morphis.jpg");
         ImageView iv1 = new ImageView();
         iv1.setImage(image);
 

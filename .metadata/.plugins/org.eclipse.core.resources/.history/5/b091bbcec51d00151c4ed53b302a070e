@@ -24,7 +24,7 @@ public class Gui extends Application {
     private static String messageToConsole = "";
     private static final int MAX_WITH_CONSOLE = 1200;
     private String pathCSS = "gui/styles/myStyle_v1.css";
-    private String pathMEDIA = "media";
+    private String pathMEDIA = "media/";
 
     public static void main(String[] args) {
         launch(args);
@@ -33,7 +33,7 @@ public class Gui extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
     	//SET ICON
-    	primaryStage.getIcons().add(new Image(pathMEDIA + "/morphisICON.jpg"));
+    	primaryStage.getIcons().add(new Image("media/morphisICON.jpg"));
  
         window = primaryStage;
         primaryStage.setResizable(false);
@@ -64,7 +64,7 @@ public class Gui extends Application {
         createAll.getStyleClass().add("button-purple");
         
         //IMAGE
-        Image image = new Image(pathMEDIA + "/morphis.jpg");
+        Image image = new Image("media/morphis.jpg");
         ImageView iv1 = new ImageView();
         iv1.setImage(image);
 

@@ -64,7 +64,7 @@ public class Gui extends Application {
         createAll.getStyleClass().add("button-purple");
         
         //IMAGE
-        Image image = new Image(pathMEDIA + "/morphis.jpg");
+        Image image = new Image(pathMedia + "/morphis.jpg");
         ImageView iv1 = new ImageView();
         iv1.setImage(image);
 
