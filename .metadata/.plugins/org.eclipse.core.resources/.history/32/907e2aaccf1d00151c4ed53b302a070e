@@ -1,0 +1,46 @@
+
+.root{
+    -fx-background-color: #383838;
+}
+
+.label{
+    -fx-text-fill: #ffffff;
+}
+.button{
+    -fx-background-color: #AB4642;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+.button-blue{
+    -fx-background-color: #3333CC;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+.button-red{
+    -fx-background-color: #880000 ;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+.button-green{
+    -fx-background-color: #66CC33;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+.button-orange{
+    -fx-background-color: #ff9900;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+.button-purple{
+    -fx-background-color: #9933CC;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+#bold-label{
+    -fx-font-weight: bold;
+}

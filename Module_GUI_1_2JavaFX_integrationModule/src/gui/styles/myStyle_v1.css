@@ -1,10 +1,9 @@
-
 .root{
     -fx-background-color: #383838;
 }
 
 .label{
-    -fx-text-fill: #e8e8e8;
+    -fx-text-fill: #ffffff;
 }
 .button{
     -fx-background-color: #AB4642;
@@ -35,14 +34,12 @@
     -fx-background-radius: 4;
 }
 
-
-
-
 .button-purple{
     -fx-background-color: #9933CC;
     -fx-text-fill: #FFFFFF;
     -fx-background-radius: 4;
 }
+
 #bold-label{
     -fx-font-weight: bold;
 }

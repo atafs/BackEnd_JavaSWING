@@ -18,9 +18,18 @@
 <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
 <fullyQualifiedTypeName name="javaFx._3javaFxTABLE.Person"/>
 <fullyQualifiedTypeName name="javafx.scene.text.Text"/>
-<fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
 <fullyQualifiedTypeName name="javafx.scene.text.Font"/>
 <fullyQualifiedTypeName name="javafx.scene.Parent"/>
 <fullyQualifiedTypeName name="americo.main.main17.Person"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
+<fullyQualifiedTypeName name="gui_v1_0.Gui"/>
+<fullyQualifiedTypeName name="javafx.event.EventHandler"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextAreaBuilder"/>
+<fullyQualifiedTypeName name="java.io.PrintStream"/>
+<fullyQualifiedTypeName name="javafx.geometry.HPos"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>
