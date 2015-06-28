@@ -23,7 +23,9 @@ public class Gui extends Application {
     private Scene scene, scene2, sceneAttach, sceneSubtask, sceneAll;
     private static TextArea console, consoleSubtask, consoleAttach, consoleAll;
     private static String messageToConsole = "";
-    private static final int MAX_WITH_CONSOLE = 1200;
+    private static final int MAX_WIDTH_CONSOLE = 1200;
+    private static final int MAX_HEIGHT_CONSOLE = 600;
+
     private String pathCSS = "gui/styles/myStyle_v1.css";
     private String pathMEDIA = "media";
 
@@ -103,7 +105,6 @@ public class Gui extends Application {
         createAll.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                //System.out.println("createAll");
                 printMessageInConsole("createAll");
                 window.setScene(sceneAll);
             }
@@ -124,7 +125,8 @@ public class Gui extends Application {
         //cssEditorFld.setPrefRowCount(10);
         console.setPrefColumnCount(100);
         console.setWrapText(true);
-        console.setPrefWidth(MAX_WITH_CONSOLE - 10);
+        console.setPrefWidth(MAX_WIDTH_CONSOLE - 10);
+        console.setPrefHeight(MAX_HEIGHT_CONSOLE - 10);
         //GridPane.setHalignment(console, HPos.CENTER);
         //GridPane.setConstraints(console, 1, 1);
 
@@ -134,16 +136,26 @@ public class Gui extends Application {
         //TEXTFIELD
         TextField type2 = new TextField(cssDefault);
         type2.setDisable(true);
-        GridPane.setConstraints(type2, 3, 1);
+        GridPane.setConstraints(type2, 4, 1);
         
         //BUTTON
         Button start = new Button("START");
         GridPane.setConstraints(start, 0, 1);
-        start.getStyleClass().add("button-red");
+        start.getStyleClass().add("button-blue");
         start.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
             	testRunProgram("starting the program..." + "\n", console);
+            	start.setDisable(true);
+            }
+        });
+        
+        Button update = new Button("UPDATE");
+        GridPane.setConstraints(update, 1, 1);
+        update.getStyleClass().add("button-red");
+        update.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
             	testRunProgram("half way there..." + "\n", console);
             	testRunProgram("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy..." + "\n", console);
             	testRunProgram("finished the program..." + "\n", console);
@@ -151,7 +163,7 @@ public class Gui extends Application {
         });
         
         Button clean = new Button("CLEAN");
-        GridPane.setConstraints(clean, 1, 1);
+        GridPane.setConstraints(clean, 2, 1);
         clean.getStyleClass().add("button-orange");
         clean.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -163,18 +175,20 @@ public class Gui extends Application {
         });
         
         Button back = new Button("BACK");
-        GridPane.setConstraints(back, 2, 1);
-        back.getStyleClass().add("button-blue");
+        GridPane.setConstraints(back, 3, 1);
+        back.getStyleClass().add("button-purple");
         back.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+            	console.setText("");
             	messageToConsole = "";
                 printMessageInConsole("returning to main menu");
                 window.setScene(scene);
+                start.setDisable(false);
             }
         });
 
-        gridpane.getChildren().addAll(start, clean, back, type2);
+        gridpane.getChildren().addAll(start, update, clean, back, type2);
   
         scene2 = new Scene(root2);
         scene2.setFill(Color.BLACK);
@@ -199,7 +213,9 @@ public class Gui extends Application {
         //cssEditorFld.setPrefRowCount(10);
         consoleAttach.setPrefColumnCount(100);
         consoleAttach.setWrapText(true);
-        consoleAttach.setPrefWidth(MAX_WITH_CONSOLE - 10);
+        consoleAttach.setPrefWidth(MAX_WIDTH_CONSOLE - 10);
+        consoleAttach.setPrefHeight(MAX_HEIGHT_CONSOLE - 10);
+
         //GridPane.setHalignment(console, HPos.CENTER);
         //GridPane.setConstraints(console, 1, 1);
 
@@ -209,16 +225,26 @@ public class Gui extends Application {
         //TEXTFIELD
         TextField typeAttach = new TextField(cssDefaultAttach);
         typeAttach.setDisable(true);
-        GridPane.setConstraints(typeAttach, 3, 1);
+        GridPane.setConstraints(typeAttach, 4, 1);
         
         //BUTTON
         Button startAttach = new Button("START");
         GridPane.setConstraints(startAttach, 0, 1);
-        startAttach.getStyleClass().add("button-red");
+        startAttach.getStyleClass().add("button-blue");
         startAttach.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
             	testRunProgram("starting the program..." + "\n", consoleAttach);
+            	startAttach.setDisable(true);
+            }
+        });
+        
+        Button updateAttach = new Button("UPDATE");
+        GridPane.setConstraints(updateAttach, 1, 1);
+        updateAttach.getStyleClass().add("button-red");
+        updateAttach.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
             	testRunProgram("half way there..." + "\n", consoleAttach);
             	testRunProgram("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy..." + "\n", consoleAttach);
             	testRunProgram("finished the program..." + "\n", consoleAttach);
@@ -226,7 +252,7 @@ public class Gui extends Application {
         });
         
         Button cleanAttach = new Button("CLEAN");
-        GridPane.setConstraints(cleanAttach, 1, 1);
+        GridPane.setConstraints(cleanAttach, 2, 1);
         cleanAttach.getStyleClass().add("button-orange");
         cleanAttach.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -238,18 +264,20 @@ public class Gui extends Application {
         });
         
         Button backAttach = new Button("BACK");
-        GridPane.setConstraints(backAttach, 2, 1);
-        backAttach.getStyleClass().add("button-blue");
+        GridPane.setConstraints(backAttach, 3, 1);
+        backAttach.getStyleClass().add("button-purple");
         backAttach.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+            	consoleAttach.setText("");
             	messageToConsole = "";
                 printMessageInConsole("returning to main menu");
                 window.setScene(scene);
+                startAttach.setDisable(false);
             }
         });
 
-        gridpaneAttach.getChildren().addAll(startAttach, cleanAttach, backAttach, typeAttach);
+        gridpaneAttach.getChildren().addAll(startAttach, cleanAttach, backAttach, updateAttach, typeAttach);
   
         sceneAttach = new Scene(rootAttach);
         sceneAttach.setFill(Color.BLACK);
@@ -274,7 +302,8 @@ public class Gui extends Application {
         //cssEditorFld.setPrefRowCount(10);
         consoleSubtask.setPrefColumnCount(100);
         consoleSubtask.setWrapText(true);
-        consoleSubtask.setPrefWidth(MAX_WITH_CONSOLE - 10);
+        consoleSubtask.setPrefHeight(MAX_HEIGHT_CONSOLE - 10);
+        consoleSubtask.setPrefWidth(MAX_WIDTH_CONSOLE - 10);
         //GridPane.setHalignment(console, HPos.CENTER);
         //GridPane.setConstraints(console, 1, 1);
 
@@ -284,16 +313,26 @@ public class Gui extends Application {
         //TEXTFIELD
         TextField typeSubtask = new TextField(cssDefaultSubtask);
         typeSubtask.setDisable(true);
-        GridPane.setConstraints(typeSubtask, 3, 1);
+        GridPane.setConstraints(typeSubtask, 4, 1);
         
         //BUTTON
         Button startSubtask = new Button("START");
         GridPane.setConstraints(startSubtask, 0, 1);
-        startSubtask.getStyleClass().add("button-red");
+        startSubtask.getStyleClass().add("button-blue");
         startSubtask.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
             	testRunProgram("starting the program..." + "\n", consoleSubtask);
+            	startSubtask.setDisable(true);
+            }
+        });
+        
+        Button updateSubtask = new Button("UPDATE");
+        GridPane.setConstraints(updateSubtask, 1, 1);
+        updateSubtask.getStyleClass().add("button-red");
+        updateSubtask.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
             	testRunProgram("half way there..." + "\n", consoleSubtask);
             	testRunProgram("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy..." + "\n", consoleSubtask);
             	testRunProgram("finished the program..." + "\n", consoleSubtask);
@@ -301,7 +340,7 @@ public class Gui extends Application {
         });
         
         Button cleanSubtask = new Button("CLEAN");
-        GridPane.setConstraints(cleanSubtask, 1, 1);
+        GridPane.setConstraints(cleanSubtask, 2, 1);
         cleanSubtask.getStyleClass().add("button-orange");
         cleanSubtask.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -313,18 +352,20 @@ public class Gui extends Application {
         });
         
         Button backSubtask = new Button("BACK");
-        GridPane.setConstraints(backSubtask, 2, 1);
-        backSubtask.getStyleClass().add("button-blue");
+        GridPane.setConstraints(backSubtask, 3, 1);
+        backSubtask.getStyleClass().add("button-purple");
         backSubtask.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+            	consoleSubtask.setText("");
             	messageToConsole = "";
                 printMessageInConsole("returning to main menu");
                 window.setScene(scene);
+                startSubtask.setDisable(false);
             }
         });
 
-        gridpaneSubtask.getChildren().addAll(startSubtask, cleanSubtask, backSubtask, typeSubtask);
+        gridpaneSubtask.getChildren().addAll(startSubtask, cleanSubtask, backSubtask, updateSubtask, typeSubtask);
   
         sceneSubtask = new Scene(rootSubtask);
         sceneSubtask.setFill(Color.BLACK);
@@ -349,7 +390,9 @@ public class Gui extends Application {
         //cssEditorFld.setPrefRowCount(10);
         consoleAll.setPrefColumnCount(100);
         consoleAll.setWrapText(true);
-        consoleAll.setPrefWidth(MAX_WITH_CONSOLE - 10);
+        consoleAll.setPrefWidth(MAX_WIDTH_CONSOLE - 10);
+        consoleAll.setPrefHeight(MAX_HEIGHT_CONSOLE - 10);
+
         //GridPane.setHalignment(console, HPos.CENTER);
         //GridPane.setConstraints(console, 1, 1);
 
@@ -359,16 +402,26 @@ public class Gui extends Application {
         //TEXTFIELD
         TextField typeAll = new TextField(cssDefaultAll);
         typeAll.setDisable(true);
-        GridPane.setConstraints(typeAll, 3, 1);
+        GridPane.setConstraints(typeAll, 4, 1);
         
         //BUTTON
         Button startAll = new Button("START");
         GridPane.setConstraints(startAll, 0, 1);
-        startAll.getStyleClass().add("button-red");
+        startAll.getStyleClass().add("button-blue");
         startAll.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
             	testRunProgram("starting the program..." + "\n", consoleAll);
+            	startAll.setDisable(true);
+            }
+        });
+        
+        Button updatetAll = new Button("UPDATE");
+        GridPane.setConstraints(updatetAll, 1, 1);
+        updatetAll.getStyleClass().add("button-red");
+        updatetAll.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
             	testRunProgram("half way there..." + "\n", consoleAll);
             	testRunProgram("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy..." + "\n", consoleAll);
             	testRunProgram("finished the program..." + "\n", consoleAll);
@@ -376,7 +429,7 @@ public class Gui extends Application {
         });
         
         Button cleanAll = new Button("CLEAN");
-        GridPane.setConstraints(cleanAll, 1, 1);
+        GridPane.setConstraints(cleanAll, 2, 1);
         cleanAll.getStyleClass().add("button-orange");
         cleanAll.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -388,18 +441,20 @@ public class Gui extends Application {
         });
         
         Button backAll = new Button("BACK");
-        GridPane.setConstraints(backAll, 2, 1);
-        backAll.getStyleClass().add("button-blue");
+        GridPane.setConstraints(backAll, 3, 1);
+        backAll.getStyleClass().add("button-purple");
         backAll.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+            	consoleAll.setText("");
             	messageToConsole = "";
                 printMessageInConsole("returning to main menu");
                 window.setScene(scene);
+                startAll.setDisable(false);
             }
         });
 
-        gridpaneAll.getChildren().addAll(startAll, cleanAll, backAll, typeAll);
+        gridpaneAll.getChildren().addAll(startAll, cleanAll, backAll, updatetAll, typeAll);
   
         sceneAll = new Scene(rootAll);
         sceneAll.setFill(Color.BLACK);
