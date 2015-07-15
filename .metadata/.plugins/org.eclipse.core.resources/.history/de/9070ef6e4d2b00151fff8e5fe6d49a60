@@ -22,7 +22,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Gui_v1 extends Application {
+public class Gui extends Application {
 
     private Stage window;
     private Scene scene, scene2, sceneAttach, sceneSubtask, sceneAll, sceneReport;
