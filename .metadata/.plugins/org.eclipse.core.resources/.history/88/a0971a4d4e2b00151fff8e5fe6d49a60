@@ -722,4 +722,15 @@ public class Gui extends Application {
 		dataList.addAll("Margarida Operating");
 		return dataList;
 	}
+	
+	public void animateLogo() {
+	    TranslateTransition tt = 
+	    new TranslateTransition(Duration.seconds(30), logoImage);
+
+	    tt.setFromX( -(logoImage.getFitWidth()) );
+	    tt.setToX( rootPane.getPrefWidth() );
+	    tt.setCycleCount( Timeline.INDEFINITE );
+	    tt.play();
+	}
+}
 }

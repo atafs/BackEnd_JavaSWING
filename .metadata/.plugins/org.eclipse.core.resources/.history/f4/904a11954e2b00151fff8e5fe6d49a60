@@ -1,5 +1,7 @@
 package gui;
 
+import javafx.animation.Timeline;
+import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -22,6 +24,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class Gui extends Application {
 
@@ -38,6 +41,7 @@ public class Gui extends Application {
 
     //ANIMATION
     protected AnchorPane rootPane;
+    protected ImageView iv1;
     
     private static final int MAX_WIDTH_CONSOLE = 1200;
     private static final int MAX_HEIGHT_CONSOLE = 600;
@@ -47,6 +51,7 @@ public class Gui extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        animateLogo()
     }
     
     @Override
@@ -92,7 +97,7 @@ public class Gui extends Application {
         
         //IMAGE
         Image image = new Image(pathMEDIA + "/morphis.jpg");
-        ImageView iv1 = new ImageView();
+        iv1 = new ImageView();
         iv1.setImage(image);
 
         //Add everything to grid
@@ -722,4 +727,14 @@ public class Gui extends Application {
 		dataList.addAll("Margarida Operating");
 		return dataList;
 	}
+	
+	public void animateLogo() {
+	    TranslateTransition tt = new TranslateTransition(Duration.seconds(30), iv1);
+
+	    tt.setFromX( -(iv1.getFitWidth()) );
+	    tt.setToX( rootPane.getPrefWidth() );
+	    tt.setCycleCount( Timeline.INDEFINITE );
+	    tt.play();
+	}
+
 }

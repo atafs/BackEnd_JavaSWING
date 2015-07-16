@@ -16,7 +16,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -36,8 +35,6 @@ public class Gui extends Application {
     private static String messageToConsole = "";
     private String message = "project = xxx AND ";
 
-    //ANIMATION
-    protected AnchorPane rootPane;
     
     private static final int MAX_WIDTH_CONSOLE = 1200;
     private static final int MAX_HEIGHT_CONSOLE = 600;
